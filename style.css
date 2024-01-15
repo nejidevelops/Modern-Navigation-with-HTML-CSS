@@ -3,3 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+}
+
+html {
+  font-family: system-ui;
+}
+
+body {
+  font-size: 1.25rem;
+  background-color: var(--body-bg);
+  color: #fff;
+}
