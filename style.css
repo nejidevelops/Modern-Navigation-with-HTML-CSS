@@ -39,11 +39,13 @@ nav {
 }
 
 .nav-list li {
-  background-color: red;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border-radius: 100vw 0 0 100vw;
 }
 
 .nav-list li.active {
-  background: yellow;
+  background: var(--body-bg);
 }
 
 .nav-list a {
