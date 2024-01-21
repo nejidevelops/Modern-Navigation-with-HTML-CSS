@@ -14,7 +14,39 @@ html {
 }
 
 body {
+  min-height: 200vh;
   font-size: 1.25rem;
   background-color: var(--body-bg);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 2rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  max-height: 100svh;
+  background-color: var(--nav-bg);
+}
+
+.nav-list {
+  list-style: none;
+  display: grid;
+  gap: 4rem;
+  padding-block: 2rem;
+  font-size: 2rem;
+}
+
+.nav-list li {
+  background-color: red;
+}
+
+.nav-list li.active {
+  background: yellow;
+}
+
+.nav-list a {
+  text-decoration: none;
   color: #fff;
 }
