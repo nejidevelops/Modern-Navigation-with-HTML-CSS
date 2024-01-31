@@ -49,6 +49,22 @@ nav {
   position: relative;
 }
 
+.nav-list li:nth-child(1) a {
+  view-transition-name: navLink-1;
+}
+
+.nav-list li:nth-child(2) a {
+  view-transition-name: navLink-2;
+}
+
+.nav-list li:nth-child(3) a {
+  view-transition-name: navLink-3;
+}
+
+::view-transition-group(activeNavTab) {
+  animation-duration: 500ms;
+}
+
 .nav-list li.active::before,
 .nav-list li.active::after {
   --border-radius: 2rem;
@@ -76,4 +92,7 @@ nav {
 .nav-list a {
   text-decoration: none;
   color: #fff;
+  display: block;
+  position: relative;
+  z-index: 10;
 }
